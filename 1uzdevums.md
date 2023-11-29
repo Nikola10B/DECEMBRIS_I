@@ -1,10 +1,10 @@
-# skaitlis_kvadrats.py
-def cipars():
-    skaitlis = 1
-    while skaitlis**2 <= 1000:
-        skaitlis += 1
-    return skaitlis
+def saskaitisana(skaitlis):
+    summa = 0
+    for i in range(1, skaitlis + 1):
+        summa += i
+    return summa
 
-if __name__ == "__main__":
-    rezultats = cipars()
-    print(f"Pirmo skaitli, kura kvadrāts ir lielāks par 1000, ir: {rezultats}")
+if sk1== "saskaitisies":
+    ievaditais_skaitlis = int(input("Ievadiet skaitli: "))
+    rezultats = saskaitisana(ievaditais_skaitlis)
+    print(f"Saskaitot no 1 līdz {ievaditais_skaitlis}, rezultāts ir: {rezultats}")
