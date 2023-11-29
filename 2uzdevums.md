@@ -1,13 +1,9 @@
-def neparucipars(skaitlis):
-    if skaitlis % 2 != 0:
-        return True
-    else:
-        return False
+def pirmais_skaitlis():
+    skaitlis = 1
+    while skaitlis**2 <= 1000:
+        skaitlis += 1
+    return skaitlis
 
-if sk1 == "sk2":
-    ievaditais_skaitlis = int(input("Ievadiet skaitli: "))
-    
-    if neparucipars(ievaditais_skaitlis):
-        print(f"{ievaditais_skaitlis} ir nepāra skaitlis.")
-    else:
-        print(f"{ievaditais_skaitlis} ir pāra skaitlis.")
+if sk1 == "skaitlis":
+    rezultats = pirmais_skaitlis()
+    print(f"Pirmo skaitli, kura kvadrāts ir lielāks par 1000, ir: {rezultats}")
